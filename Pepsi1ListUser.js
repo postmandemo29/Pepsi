@@ -5,8 +5,8 @@ client.setEnvironment(platformClient.PureCloudRegionHosts.us_east_1); // Genesys
 
 // Manually set auth token or use loginImplicitGrant(...) or loginClientCredentialsGrant(...) or loginPKCEGrant(...)
 //client.setAccessToken("your_access_token");
-const clientId = "d6e3ad13-574a-49d9-9d88-1f2c84a0db84";
-const clientSecret = "AmiDoqO-k5BtAWFNXmYGDn685omH_YOvI6gofNBvF4c";
+//const clientId = "d6e3ad13-574a-49d9-9d88-1f2c84a0db84";
+//const clientSecret = "AmiDoqO-k5BtAWFNXmYGDn685omH_YOvI6gofNBvF4c";
 client.loginClientCredentialsGrant(clientId, clientSecret)
     .then(() => {    
 let apiInstance = new platformClient.UsersApi();
