@@ -23,5 +23,8 @@ jobs:
         run: npm install purecloud-platform-client-v2
 
       - name: Run JavaScript file
+        env:
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: node ./Pepsi1ListUser.js
 
